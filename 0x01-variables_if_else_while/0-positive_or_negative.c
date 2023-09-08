@@ -5,8 +5,7 @@
 /**
  * main - Entry point
  *
- * Description: 'This program checks the value of the variable n (positive - negative - zero)'
- * @parameter: void
+ * Description: 'This program checks the value of the variable n'
  *
  * Return: Always 0 (Success)
  */
