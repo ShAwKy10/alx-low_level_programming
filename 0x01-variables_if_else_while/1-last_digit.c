@@ -16,6 +16,7 @@ int main(void)
 	int m;
 	int flag;
 	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
 	flag = n;
 	if (n > 0)
