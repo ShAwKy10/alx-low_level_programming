@@ -32,7 +32,7 @@ int main(void)
 	 }
 
 	else if (n < 0)
-        {
+	 {
 		 while (flag <= -10)
 		{
 			flag = flag + 10;
@@ -43,8 +43,8 @@ int main(void)
 
 	else
 	{
-		 m = 0;
-	 }
+		 m = 0; 
+	}
 
 	printf ("Last digit of %d is %d ", n, m);
 
