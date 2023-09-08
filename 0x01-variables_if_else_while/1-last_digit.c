@@ -46,13 +46,13 @@ int main(void)
 		 m = 0; 
 	}
 
-	printf ("Last digit of %d is %d ", n, m);
+	printf("Last digit of %d is %d ", n, m);
 
 	if (m == 0)
 	{
 		printf("and is 0\n");
 	}
-	
+
 	else if (m > 5)
 	{
 		printf("and is greater than 5\n");
