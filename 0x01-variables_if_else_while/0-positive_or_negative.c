@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* main function is where I put my main code */
+/**
+ * main - Entry point
+ *
+ * Description: 'This program checks the value of the variable n (positive - negative - zero)'
+ * @parameter: void
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int n;
@@ -25,7 +32,7 @@ int main(void)
 	else
 	{
 		printf("%d is zero\n", n);
-	}	
+	}
 
 	return (0);
 }
