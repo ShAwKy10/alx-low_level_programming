@@ -18,7 +18,7 @@ int main(void)
 			'a', 'b', 'c', 'd', 'e',
 			'f', '\n'};
 
-	for (n = 0; n <= 17; n++)
+	for (n = 0; n < 18; n++)
 	{
 		putchar(arr[n]);
 	}
