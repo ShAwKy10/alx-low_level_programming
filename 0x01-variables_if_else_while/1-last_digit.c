@@ -12,39 +12,39 @@
 
 int main(void)
 {
-        int n;
+	int n;
 	int m;
 	int flag;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 	flag = n;
-        /* your code goes there */
+	/* your code goes there */
 
-        if (n > 0)
-        {
-                while (flag >= 10)
+	if (n > 0)
+	{
+		while (flag >= 10)
 		{
 			flag = flag - 10;
 		}
 
 		m = flag;
-        }
+	 }
 
-        else if (n < 0)
+	else if (n < 0)
         {
-                while (flag <= -10)
+		 while (flag <= -10)
 		{
 			flag = flag + 10;
 		}
 
 		m = flag;
-        }
+	}
 
-        else
-        {
-                m = 0;
-        }
+	else
+	{
+		 m = 0;
+	 }
 
 	printf ("Last digit of %d is %d ", n, m);
 
@@ -63,5 +63,5 @@ int main(void)
 		printf("and is less than 6 and not 0\n");
 	}
 
-        return (0);
+	return (0);
 }
