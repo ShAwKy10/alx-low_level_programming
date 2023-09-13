@@ -32,7 +32,7 @@ int print_last_digit(int n)
 	}
 	else
 	m = 0;
-	_putchar((char) m);
+	_putchar(m);
 
 	return (m);
 }
