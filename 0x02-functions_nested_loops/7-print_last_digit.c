@@ -10,29 +10,13 @@
 
 int print_last_digit(int n)
 {
-	int m;
-	int flag;
+	int lastDigit;
 
-	flag = n;
-	if (n > 0)
-	{
-		while (flag >= 10)
-		{
-			flag = flag - 10;
-		}
-		m = flag;
-	}
-	else if (n < 0)
-	{
-		while (flag <= -10)
-		{
-			flag = flag + 10;
-		}
-		m = flag;
-	}
+	if (n < 0)
+		lastDigit = -1 * (n % 10);
 	else
-	m = 0;
-	_putchar(m);
+		lastDigit = n % 10;
 
-	return (m);
+	_putchar(lastDigit + '0');
+	return (lastDigit);
 }
