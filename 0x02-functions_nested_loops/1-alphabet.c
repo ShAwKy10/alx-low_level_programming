@@ -1,17 +1,22 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Prints the aphabet lowercase follwed by new line
  *
- * Description - This program prints the alphabet in, lowercase,
- *		followed by a new line.
- *
- * Return: Always 0 (success)
+ * Return: void
  */
-
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	int n;
+	char arr[27] = {'a', 'b', 'c', 'd', 'e', 'f', 'g',
+			'h', 'i', 'j', 'k', 'l', 'm', 'n',
+			'o', 'p', 'q', 'r', 's', 't', 'u',
+			'v', 'w', 'x', 'y', 'z', '\n'};
 
-	return (0);
+	for (n = 0; n <= 26; n++)
+	{
+		_putchar(arr[n]);
+	}
+
+	return;
 }
