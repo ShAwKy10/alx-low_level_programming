@@ -18,5 +18,4 @@ void print_alphabet(void)
 		_putchar(arr[n]);
 	}
 
-	return;
 }
