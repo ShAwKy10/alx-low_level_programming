@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * add - adds two numbers together.
  * @n1: The first number to be added.
