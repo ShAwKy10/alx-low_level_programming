@@ -13,9 +13,9 @@ void print_numbers(void)
 
 	for (n = 0; n < 10; n++)
 	{
-		putchar((char)arr[n]);
+		_putchar((char)arr[n]);
 	}
 
-	putchar((char)newL);
+	_putchar((char)newL);
 
 }
