@@ -14,4 +14,6 @@ void _puts(char *str)
 		_putchar(*(str + printer));
 		printer++;
 	}
+
+	_putchar('\n');
 }
