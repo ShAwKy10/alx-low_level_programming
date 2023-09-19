@@ -7,6 +7,7 @@
  */
 void puts_half(char *str)
 {
+	int printer;
 	int num = 0;
 
 	while (str[num] != '\0')
@@ -14,7 +15,6 @@ void puts_half(char *str)
 		num++;
 	}
 
-	num--;
 
 	if ((num % 2) == 0)
 	{
@@ -24,11 +24,14 @@ void puts_half(char *str)
 	{
 		num = (num - 1) / 2;
 	}
+	
+	printer = num;
 
 	while (*(str + num) != '\0')
 	{
-		_putchar(*(str + num));
+		_putchar(*(str + printer));
 		num++;
+		printer++;
 	}
 
 	_putchar('\n');
