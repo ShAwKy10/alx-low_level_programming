@@ -14,6 +14,8 @@ void puts_half(char *str)
 		num++;
 	}
 
+	num--;
+
 	if ((num % 2) == 0)
 	{
 		num = num / 2;
