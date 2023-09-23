@@ -9,6 +9,8 @@
  */
 char *string_toupper(char *c)
 {
+	int i;
+
 	for (i = 0; c[i]; i++)
 	{
 		if (c[i] > 64 && c[i] < 91)
