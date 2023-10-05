@@ -41,8 +41,6 @@ char *_strdup(char *str)
 		}
 	}
 
-	free(cp_arr);
-
 	return (cp_arr);
 }
 
