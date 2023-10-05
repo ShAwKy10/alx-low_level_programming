@@ -21,14 +21,18 @@ char *str_concat(char *s1, char *s2)
 			i++;
 	}
 	else
+	{
 		s1 = "";
+	}
 	if (s2 != NULL)
 	{
 		while (s2[ii] != '\0')
 			ii++;
 	}
 	else
+	{
 		s2 = "";
+	}
 	newStr = malloc(sizeof(char) * (i + ii + 1));
 	i = 0;
 	ii = 0;
