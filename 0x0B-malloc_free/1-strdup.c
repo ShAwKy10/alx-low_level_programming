@@ -39,6 +39,9 @@ char *_strdup(char *str)
 		{
 			cp_arr[i] = str[i];
 		}
+
+		i++;
+		cp_arr[i] = '\0';
 	}
 
 	return (cp_arr);
