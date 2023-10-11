@@ -67,6 +67,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int leno;
 	dog_t *nd;
 
+	lenn = _strlen(name);
+	leno = _strlen(owner);
+
 	nd = malloc(sizeof(dog_t));
 
 	if (nd == NULL)
@@ -74,9 +77,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(nd);
 		return (NULL);
 	}
-
-	lenn = _strlen(name);
-	leno = _strlen(owner);
 
 	nd->name = malloc((sizeof(char) * lenn) + 1);
 	nd->owner = malloc((sizeof(char) * leno) + 1);
@@ -93,8 +93,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	_strcp(nd->name, name);
-	_strcp(nd->owner, owner);
+	_strcpy(nd->name, name);
+	_strcpy(nd->owner, owner);
 	nd->age = age;
 
 	return (nd);
