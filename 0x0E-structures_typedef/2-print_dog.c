@@ -4,6 +4,7 @@
 
 /**
  * print_dog - A function that prints a struct dog.
+ *
  * @d: A pointer to struct dog to initialize.
  */
 
