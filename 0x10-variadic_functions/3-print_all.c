@@ -26,14 +26,14 @@ void print_all(const char * const format, ...)
 			printf("%c", va_arg(pap, int));
 			break;
 		case 'i':
-			printf("%d", va_arg(valist, int));
+			printf("%d", va_arg(pap, int));
 			break;
 		case 'f':
-			printf("%f", va_arg(valist, double));
+			printf("%f", va_arg(pap, double));
 			break;
 		case 's':
-			sp = va_arg(valist, char *);
-			if (!str)
+			sp = va_arg(pap, char *);
+			if (!sp)
 			{
 				printf("(nil)");
 				break;
