@@ -20,25 +20,29 @@ void print_all(const char * const format, ...)
 
 	while (format[j])
 	{
-		if ((format[j] == 'c') || (format[j] == 's'))
+		switch (format[j])
 		{
-			sp = va_arg(pap, char *);
-
-			if (sp)
-				printf("%s", sp);
-			else
+		case 'c':
+			printf("%c", va_arg(pap, int));
+			break;
+		case 'i':
+			printf("%d", va_arg(valist, int));
+			break;
+		case 'f':
+			printf("%f", va_arg(valist, double));
+			break;
+		case 's':
+			sp = va_arg(valist, char *);
+			if (!str)
+			{
 				printf("(nil)");
+				break;
+			}
+			printf("%s", sp);
+			break;
 		}
-		else if ((format[j] == 'i') || (format[j] == 'f'))
-			printf("%f", va_arg(pap, float));
-		else
-			va_arg(pap, void);
-
-		j++
+		j++;
 	}
-
 	printf("\n");
-
 	va_end(pap);
-
 }
